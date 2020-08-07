@@ -6,13 +6,11 @@ html, body, .grid-container { height: 100%; margin: 0; }
 
 @font-face {
   font-family: WhiteRabbit;
-  src: url('../fonts/whitrabt.ttf') format('ttf');
-  font-weight: 600;
-  font-style: normal;
+  src: url('../fonts/whitrabt.woff') format('woff');
 }
 
-html * {
-  font-family: WhiteRabbit, fantasy !important;
+* {
+  font-family: WhiteRabbit, serif;
 }
 
 .grid-container {
