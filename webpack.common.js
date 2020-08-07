@@ -28,6 +28,18 @@ module.exports = {
                     'css-loader',
                     'sass-loader',],
             },
+            // Font files
+            {
+                test: /\.(woff|woff2|ttf|otf)$/,
+                loader: 'file-loader',
+                include: [/fonts/],
+
+                options: {
+                    name: '[hash].[ext]',
+                    outputPath: './',
+                    publicPath: url => '../css/' + url
+                }
+            },
         ],
     },
     resolve: {

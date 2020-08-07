@@ -3,6 +3,18 @@
 
 html, body, .grid-container { height: 100%; margin: 0; }
 
+
+@font-face {
+  font-family: WhiteRabbit;
+  src: url('../fonts/whitrabt.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+html * {
+  font-family: WhiteRabbit, fantasy !important;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 0.5fr 1.5fr 1.6fr 0.5fr 0.9fr;
@@ -27,7 +39,7 @@ html, body, .grid-container { height: 100%; margin: 0; }
 }
 
 /* For presentation only, no need to copy the code below */
-.grid-container * { 
+.grid-container * {
  border: 1px solid red;
  position: relative;
 }
